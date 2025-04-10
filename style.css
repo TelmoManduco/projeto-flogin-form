@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: url("images/back-img.jpg") no-repeat bottom;
+    background-size: cover;
+}
+
+.main-cont {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    max-width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.501);
+}
+
+.sub-cont  h1 {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.708);
+}
+
+.input-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;
+    
+}
+
+.input-box {
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #202d5000;
+    color: white;
+    outline: none;
+}
+
+.btn-login {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 15px;
+    margin-top: 5px;
+    color: white;
+    background-color: #c962b43f;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #c962b4d3;
+}
+
+.input-cont > a {
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.input-cont > a:hover {
+    text-decoration: underline;
+}
+
+
+.socials > img {
+    width: 45px;
+    margin: 50px 10px;
+    border: 2px solid none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform .5s ease;
+}
+
+.socials > img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.54);
+    transform: scale(1.5);
+}
+
+/* Media Queries*/
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: linear-gradient(to right, #006a9e, #70255d);
+    }
+
+    .sub-cont {
+        display: flex;
+        flex-direction: row;
+        width: 1000px;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .form-side {
+        width: 40%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form-side > h1 {
+        color: white;
+        margin-top: 70px;
+    }
+
+    .input-cont {
+        margin-top: 40px;
+    }
+
+    .input-box {
+        width: 70%;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .img-side {
+        width: 60%;
+        height: 100%;
+        background: url("images/back-img.jpg") no-repeat center center;
+        background-size: cover;
+        background-position: center;
+    }
+}
